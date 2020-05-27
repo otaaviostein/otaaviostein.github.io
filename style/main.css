@@ -70,6 +70,11 @@
 }
 
 @media (max-width: 1025px) {
+    
+    .header .hero-text {
+        width: 90% !important;
+    }
+
     .navbar .wrapper .logo-container a img{
         display: none;
     }
@@ -324,23 +329,34 @@ input::-webkit-search-results-decoration { display: none; }
     height: 100vh;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background: url(../images/body/hero-image.jpg) no-repeat center center; 
 }
 
-.header .container-text h1 {
-    font-size: calc(44px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.header .container-text p {
+.header .hero-text {
     text-align: center;
-    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-    margin-bottom: 30px;
+    margin: 0 auto;
+    width: 30%;
 }
 
-.header .hero-container {
-    width: 100%;
-    height: 100%;
-    background-color: lightpink;
+.header .hero-text h1 {
+    font-size: calc(48px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.header .hero-text p {
+    font-weight: 700;
+    font-size: calc(12px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 80px;
+    mix-blend-mode: hard-light;
+}
+
+.header .hero-text a {
+    background-color: #F6EFE6;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
 }
 
 .arrow-down {
